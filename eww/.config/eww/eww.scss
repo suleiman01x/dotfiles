@@ -1,0 +1,48 @@
+$main-color: rgb(255, 216, 128);
+$weak-color: rgb(100, 70, 32);
+$black: rgb(20, 30, 50);
+$body-text: 16;
+
+.layout-box {
+  font-family: "UDEV Gothic 35NF";
+  background-color: $black;
+  color: $main-color;
+}
+
+.bar-button {
+  font-size: $body-text;
+  padding: 0 10;
+  margin: 0 2;
+  margin-top: 2;
+}
+
+.bordered {
+  background-color: $black;
+  color: $main-color;
+  border-color: $main-color;
+  border-radius: 4;
+}
+.bordered:hover {
+  background-color: $weak-color;
+}
+
+.solid {
+  background-color: $main-color;
+  color: $black;
+  border-color: $main-color;
+  border-radius: 4;
+}
+
+.hollow {
+  background-color: $black;
+  border-radius: 4;
+  color: $main-color;
+}
+.hollow:hover {
+  border-color: $main-color;
+}
+
+.clock-container {
+  color: $main-color;
+  font-size: $body-text;
+}
