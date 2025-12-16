@@ -3,6 +3,10 @@ $weak-color: rgb(100, 70, 32);
 $black: rgb(20, 30, 50);
 $body-text: 16;
 
+* {
+  all: unset;
+}
+
 .layout-box {
   font-family: "UDEV Gothic 35NF";
   background-color: $black;
@@ -19,8 +23,8 @@ $body-text: 16;
 .bordered {
   background-color: $black;
   color: $main-color;
-  border-color: $main-color;
   border-radius: 4;
+  border: 1px solid $main-color;
 }
 .bordered:hover {
   background-color: $weak-color;
@@ -29,17 +33,17 @@ $body-text: 16;
 .solid {
   background-color: $main-color;
   color: $black;
-  border-color: $main-color;
+  border: 1px solid $main-color;
   border-radius: 4;
 }
 
 .hollow {
   background-color: $black;
-  border-radius: 4;
   color: $main-color;
 }
 .hollow:hover {
-  border-color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 4;
 }
 
 .clock-container {
