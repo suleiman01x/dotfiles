@@ -46,7 +46,11 @@ require('lazy').setup({
       require('telescope').load_extension('live_grep_args')
     end
   },
-  'nvim-treesitter/nvim-treesitter',
+  {
+    'nvim-treesitter/nvim-treesitter',
+    lazy = false,
+    build = ':TSUpdate'
+  },
   {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v4.x',
