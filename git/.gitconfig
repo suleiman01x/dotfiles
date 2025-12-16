@@ -1,0 +1,10 @@
+[user]
+	email = pentaconn@gmail.com
+	name = suleimanjp
+[alias]
+	wtadd = !/home/suleiman/.local/bin/wtadd.sh
+	wtremove = !/home/suleiman/.local/bin/wtremove.sh
+	wtclone = !/home/suleiman/.local/bin/wtclone.sh
+	wtlist = !/home/suleiman/.local/bin/wtlist.sh
+[core]
+	editor = nvim
