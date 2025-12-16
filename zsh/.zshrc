@@ -14,6 +14,7 @@ bindkey -v '^?' backward-delete-char
 zstyle :compinstall filename '/home/suleiman/.zshrc'
 
 export EDITOR=nvim
+export VISUAL=nvim
 
 autoload -Uz compinit
 compinit
