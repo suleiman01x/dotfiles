@@ -1,6 +1,12 @@
 [user]
 	email = pentaconn@gmail.com
 	name = suleimanjp
+[init]
+  defaultBranch = main
+[fetch]
+  prune = true
+[pull]
+  rebase = false
 [alias]
 	wtadd = !/home/suleiman/.local/bin/wtadd.sh
 	wtremove = !/home/suleiman/.local/bin/wtremove.sh
