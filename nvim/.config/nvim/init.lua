@@ -49,7 +49,17 @@ require('lazy').setup({
   {
     'nvim-treesitter/nvim-treesitter',
     lazy = false,
-    build = ':TSUpdate'
+    build = ':TSUpdate',
+    opts = {
+      auto_install = true,
+      ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query" },
+      sync_install = false,
+      highlight = {
+        enable = true,
+
+        additional_vim_regex_highlighting = false,
+      },
+    }
   },
   {
     'VonHeikemen/lsp-zero.nvim',
