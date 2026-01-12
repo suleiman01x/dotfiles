@@ -3,3 +3,8 @@ shell="/bin/zsh"
 
 [font]
 normal = { family = "UDEV Gothic 35NF", style = "Regular" }
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
