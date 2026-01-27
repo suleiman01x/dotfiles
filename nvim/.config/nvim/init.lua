@@ -50,10 +50,11 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     lazy = false,
     build = ':TSUpdate',
+    main = 'nvim-treesitter.config',
     opts = {
       auto_install = true,
       ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query" },
-      sync_install = false,
+      sync_install = true,
       highlight = {
         enable = true,
 
