@@ -11,3 +11,5 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-N>")
 vim.o.mouse = ""
 
 vim.keymap.set("n", "<leader>t", function() vim.cmd('te') end)
+
+vim.keymap.set("n", "<leader>y", function() vim.cmd('reg') end)
