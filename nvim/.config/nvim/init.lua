@@ -97,9 +97,9 @@ require('lazy').setup({
     end,
     -- if you are using nixos
     -- build = "nix run .#release",
-    opts = {              -- (optional)
+    opts = {                -- (optional)
       debug = {
-        enabled = true,   -- we expect your collaboration at least during the beta
+        enabled = true,     -- we expect your collaboration at least during the beta
         show_scores = true, -- to help us optimize the scoring system, feel free to share your scores!
       },
     },
@@ -113,6 +113,31 @@ require('lazy').setup({
         desc = 'FFFind files',
       }
     }
+  },
+  {
+    'sudo-tee/opencode.nvim',
+    config = function()
+      require("opencode").setup({})
+    end,
+    dependencies = {
+      {
+        "MeanderingProgrammer/render-markdown.nvim",
+        opts = {
+          anti_conceal = { enabled = false },
+          file_types = { 'markdown', 'opencode_output' },
+        },
+        ft = { 'markdown', 'Avante', 'copilot-chat', 'opencode_output' },
+      },
+      -- Optional, for file mentions and commands completion, pick only one
+      --'saghen/blink.cmp',
+      'hrsh7th/nvim-cmp',
+
+      -- Optional, for file mentions picker, pick only one
+      -- 'folke/snacks.nvim',
+      'nvim-telescope/telescope.nvim',
+      -- 'ibhagwan/fzf-lua',
+      -- 'nvim_mini/mini.nvim',
+    },
   }
 }
 )
